@@ -14,12 +14,20 @@ function App() {
   image: 'http://rickandmortyapi.com/api/character/avatar/4.jpeg'
 
 }
+const item3 = {
+  name:'Morty Smith',
+  image: 'http://rickandmortyapi.com/api/character/avatar/2.jpeg'
+
+}
 
 
   return (
     <>
-     <Card item={item1}/>
-     <Card item={item2}/>
+    <div className='cards'>
+      <Card item={item1}/>
+      <Card item={item2}/>
+      <Card item={item3}/>
+    </div>
     </>
   )
 }
