@@ -19,14 +19,15 @@ const item3 = {
   image: 'http://rickandmortyapi.com/api/character/avatar/2.jpeg'
 
 }
-
+const itens = [item1,item2,item3]
 
   return (
     <>
     <div className='cards'>
-      <Card item={item1}/>
-      <Card item={item2}/>
-      <Card item={item3}/>
+      {/* <Card item={itens[0]}/>
+      <Card item={itens[1]}/>
+      <Card item={itens[2]}/> */}
+      {itens.map(item => <Card item={item}/>)}
     </div>
     </>
   )
