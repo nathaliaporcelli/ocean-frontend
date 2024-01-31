@@ -4,6 +4,7 @@ import Card from './components/Card/Card'
 
 
 function App() {
+  //carregamento de dados direto via codigo
  const item1 = {
   name:'Rick Sanchez',
   image: 'http://rickandmortyapi.com/api/character/avatar/1.jpeg'
@@ -20,6 +21,22 @@ const item3 = {
 
 }
 const itens = [item1,item2,item3]
+
+//carregamento de dados via API /backend
+async function carregarDadosApi(){
+  const apiUrl = 'https://rickandmortyapi.com/api/character'
+const response = await fetch(apiUrl)
+//console.log(response)
+
+const body = await response.json()
+console.log(body)
+
+const results = body.results;
+
+//TODO enviar results para JSX exibindo um card para cada personagem
+}
+
+carregarDadosApi()
 
   return (
     <>
