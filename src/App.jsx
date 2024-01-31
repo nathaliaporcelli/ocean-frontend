@@ -27,7 +27,7 @@ const itens = [item1,item2,item3]
       {/* <Card item={itens[0]}/>
       <Card item={itens[1]}/>
       <Card item={itens[2]}/> */}
-      {itens.map(item => <Card item={item}/>)}
+      {itens.map((item,i) => <Card item={item}key={i}/>)}
     </div>
     </>
   )
