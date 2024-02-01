@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://nathaliaporcelli.github.io/ocean-frontend",
+  "homepage": "https://nathaliaporcelli.github.io/ocean-frontend/dist",
   
   "scripts": {
     "dev": "vite",
